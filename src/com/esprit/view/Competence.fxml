@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #f2f2f2;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.esprit.controllers.CompetenceController">
+    <Label layoutX="50.0" layoutY="50.0" style="-fx-font-size: 24px; -fx-text-fill: #333333;" text="Competence Management" />
+    <TextField fx:id="txtSearch" layoutX="475.0" layoutY="50.0" prefHeight="21.0" prefWidth="200.0" promptText="Search by name" />
+        <Button fx:id="btnSearch" layoutX="685.0" layoutY="50.0" mnemonicParsing="false" onAction="#search" text="Search" />
+    <TableView fx:id="competenceTable" layoutX="50.0" layoutY="100.0" prefHeight="300.0" prefWidth="700.0" style="-fx-background-color: #ffffff;">
+        <columns>
+            <TableColumn fx:id="nameColumn" prefWidth="300.0" text="Name" />
+            <TableColumn fx:id="descriptionColumn" prefWidth="400.0" text="Description" />
+        </columns>
+    </TableView>
+    
+    <Label layoutX="50.0" layoutY="425.0" style="-fx-font-size: 18px; -fx-text-fill: #333333;" text="Name:" />
+    <TextField fx:id="nameField" layoutX="200.0" layoutY="425.0" prefWidth="300.0" promptText="Enter the competence name" style="-fx-background-color: #ffffff;" />
+    
+    <Label layoutX="50.0" layoutY="475.0" style="-fx-font-size: 18px; -fx-text-fill: #333333;" text="Description:" />
+    <TextArea fx:id="descriptionArea" layoutX="200.0" layoutY="475.0" prefHeight="100.0" prefWidth="300.0" promptText="Enter the competence description" style="-fx-background-color: #ffffff;" />
+    
+    <Button fx:id="addButton" layoutX="250.0" layoutY="600.0" minWidth="100.0" style="-fx-background-color: #4caf50; -fx-text-fill: #ffffff; -fx-font-size: 16px; -fx-pref-width: 100px; -fx-pref-height: 40px;" text="Add" />
+    <Button fx:id="updateButton" layoutX="400.0" layoutY="600.0" minWidth="100.0" style="-fx-background-color: #2196f3; -fx-text-fill: #ffffff; -fx-font-size: 16px; -fx-pref-width: 100px; -fx-pref-height: 40px;" text="Update" />
+    <Button fx:id="deleteButton" layoutX="550.0" layoutY="600.0" minWidth="100.0" style="-fx-background-color: #f44336; -fx-text-fill: #ffffff; -fx-font-size: 16px; -fx-pref-width: 100px; -fx-pref-height: 40px;" text="Delete" />
+   <FontAwesomeIconView fill="#610c0c" glyphName="ROCKET" layoutX="359.0" layoutY="82.0" size="50" />
+</AnchorPane>

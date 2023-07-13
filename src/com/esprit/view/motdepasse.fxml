@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="443.0" prefWidth="600.0" stylesheets="@../controllers/Stylee1.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.esprit.controllers.MotdepasseController">
+   <children>
+      <Label layoutX="67.0" layoutY="75.0" text="Mot de passe oublié ?">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+      <Label layoutX="75.0" layoutY="160.0" text="Réinitialisez le mot de passe en deux épates rapides">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="login" layoutX="75.0" layoutY="221.0" prefHeight="51.0" prefWidth="452.0" promptText="E-mail ou téléphone" />
+      <Button fx:id="submit" layoutX="76.0" layoutY="297.0" mnemonicParsing="false" onAction="#login" prefHeight="51.0" prefWidth="459.0" style="-fx-background-color: #0077B5;" styleClass="button2" text="Réinitialiser le mot de passe" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="erreur" layoutX="42.0" layoutY="25.0" prefHeight="51.0" prefWidth="540.0" textFill="#e80d0d" />
+      <Button fx:id="retour" layoutX="260.0" layoutY="373.0" mnemonicParsing="false" onAction="#retour" style="-fx-background-color: #EAEDED;" text="Retour" textFill="#626567">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

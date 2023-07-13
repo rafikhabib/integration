@@ -1,0 +1,64 @@
+.root {
+    background-color: #f0f0f0;
+}
+
+.header-label {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 0;
+}
+
+.list-view {
+    -fx-background-color: #fff;
+    -fx-border-color: #ccc;
+    -fx-border-width: 1px;
+}
+
+.button {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: #fff;
+    -fx-font-weight: bold;
+    -fx-padding: 8px 16px;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #45a049;
+}
+
+.text-field, .text-area {
+    -fx-background-color: #fff;
+    -fx-border-color: #ccc;
+    -fx-border-width: 1px;
+    -fx-padding: 6px;
+}
+
+#saveButton {
+    -fx-background-color: #2196F3;
+}
+
+#saveButton:hover {
+    -fx-background-color: #1976D2;
+}
+
+.comment-box {
+    -fx-background-color: #f9f9f9;
+    -fx-border-color: #ccc;
+    -fx-border-width: 1px;
+    -fx-padding: 10px;
+    -fx-spacing: 10px;
+}
+
+.comment-box .author-label {
+    -fx-font-weight: bold;
+}
+
+.comment-box .content-label {
+    -fx-font-style: italic;
+    -fx-padding: 5px 0;
+}
+
+.comment-box .timestamp-label {
+    -fx-font-size: 12px;
+    -fx-text-fill: #999;
+}

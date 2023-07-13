@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="800.0" stylesheets="@../controllers/Stylee1.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.esprit.controllers.EntrepriseController">
+   <children>
+      <BorderPane layoutY="2.0" prefHeight="792.0" prefWidth="900.0">
+         <top>
+            <Pane prefHeight="155.0" prefWidth="800.0" style="-fx-background-color: #EAEDED;" BorderPane.alignment="CENTER">
+               <children>
+                  <TextField fx:id="txtSearch" focusTraversable="false" layoutX="261.0" layoutY="44.0" opacity="0.8" prefHeight="68.0" prefWidth="278.0" promptText="Entre Name ....">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </TextField>
+                  <Button fx:id="retour" layoutX="137.0" layoutY="44.0" mnemonicParsing="false" onAction="#Retour" prefHeight="71.0" prefWidth="97.0" styleClass="button1" text="Button" />
+                  <Button fx:id="search" layoutX="558.0" layoutY="41.0" mnemonicParsing="false" onAction="#Search" prefHeight="71.0" prefWidth="99.0" rotate="180.0" styleClass="button1" text="Button" />
+                  <ImageView fitHeight="66.0" fitWidth="80.0" layoutX="153.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/icons8-back-64.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="66.0" fitWidth="70.0" layoutX="566.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/icons8-search-64.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="add" layoutX="27.0" layoutY="57.0" mnemonicParsing="false" onAction="#AjouterEntreprise" prefHeight="42.0" prefWidth="76.0" style="-fx-background-color: #0077B5;" styleClass="button4" text="ADD" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font></Button>
+               </children>
+            </Pane>
+         </top>
+         <bottom>
+            <TableView fx:id="table" prefHeight="628.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+              <columns>
+                <TableColumn fx:id="nomentreprise" prefWidth="150.0" text="Nom de l'entreprise" />
+                <TableColumn fx:id="nom" minWidth="0.0" prefWidth="75.0" text="Nom" />
+                  <TableColumn fx:id="prenom" minWidth="0.0" prefWidth="0.0" text="Prénom" />
+                  <TableColumn fx:id="mail" prefWidth="94.0" text="mail" />
+                  <TableColumn fx:id="description" prefWidth="145.0" text="Description" />
+                  <TableColumn fx:id="telephone" prefWidth="97.0" text="Téléphone" />
+                  <TableColumn fx:id="taille" prefWidth="74.0" text="Taille " />
+                  <TableColumn fx:id="secteur" prefWidth="129.0" text="Secteur d'activité" />
+                  <TableColumn fx:id="siteweb" prefWidth="152.0" text="Site Web" />
+                  <TableColumn fx:id="linkedin" prefWidth="113.0" text="Linkedin" />
+                  <TableColumn fx:id="id" prefWidth="113.0" text="id" />
+                  <TableColumn fx:id="deleteColumn" prefWidth="113.0" text="Supprimer" />
+              </columns>
+            </TableView>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>

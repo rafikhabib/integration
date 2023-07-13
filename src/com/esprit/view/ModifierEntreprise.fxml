@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="ancho" prefHeight="787.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.esprit.controllers.ModifierEntrepriseController">
+   <children>
+      <Label layoutX="57.0" layoutY="78.0" text="Nom de l'entreprise" />
+      <Label layoutX="434.0" layoutY="78.0" text="Taille de l'entreprise" />
+      <Label layoutX="63.0" layoutY="133.0" text="Adresse mail" />
+      <Label fx:id="telephone" layoutX="443.0" layoutY="133.0" text="Téléphone" />
+      <Label layoutX="61.0" layoutY="24.0" text="Entreprise:" textFill="LIGHTCORAL" wrapText="true">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="93.0" layoutY="281.0" text="Nom" />
+      <Label layoutX="452.0" layoutY="281.0" text="Prénom" />
+      <Label layoutX="52.0" layoutY="237.0" text="Administrateur" wrapText="true">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfNomEntreprise" layoutX="206.0" layoutY="73.0" />
+      <TextField fx:id="tfAdresse" layoutX="206.0" layoutY="128.0" />
+      <TextField fx:id="tfnumero" layoutX="587.0" layoutY="128.0" promptText="+216 XX.XXX.XXX" />
+      <TextField fx:id="tfNom" layoutX="206.0" layoutY="276.0" />
+      <TextField fx:id="tfPrenom" layoutX="587.0" layoutY="276.0" />
+      <Label layoutX="30.0" layoutY="520.0" text="Site web et réseaux sociaux">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="77.0" layoutY="604.0" text="Site web" />
+      <Label layoutX="78.0" layoutY="662.0" text="Linkedin" />
+      <TextField fx:id="tfSIteWeb" layoutX="148.0" layoutY="599.0" prefHeight="31.0" prefWidth="628.0" promptText="www@entreprise.com" />
+      <TextField fx:id="tfLinkedin" layoutX="148.0" layoutY="657.0" prefHeight="31.0" prefWidth="628.0" promptText="https://www.linkedin.com/feed/" />
+      <Label layoutX="52.0" layoutY="351.0" prefHeight="50.0" prefWidth="133.0" text="Description de l'entreprise " wrapText="true" />
+      <Label layoutX="69.0" layoutY="461.0" text="Mot de passe" />
+      <Label layoutX="400.0" layoutY="461.0" text="Confirmer le mot de passe" />
+      <TextArea fx:id="taDescription" layoutX="203.0" layoutY="328.0" prefHeight="109.0" prefWidth="571.0" promptText="Brief description" />
+      <PasswordField fx:id="tfPassword" layoutX="206.0" layoutY="456.0" promptText="Password" />
+      <PasswordField fx:id="tfPassword2" layoutX="587.0" layoutY="456.0" promptText="Confirm Password" />
+      <Label layoutX="53.0" layoutY="189.0" text="Secteur d'activité" />
+      <ComboBox fx:id="cbSecteurActivite" layoutX="206.0" layoutY="184.0" prefWidth="150.0" style="-fx-background-color: #FFFFFF;" stylesheets="@../controller/Stylee1.css" />
+      <Button fx:id="modifier" layoutX="340.0" layoutY="721.0" mnemonicParsing="false" onAction="#ModifierEntreprise" prefHeight="31.0" prefWidth="107.0" style="-fx-background-color: #0077B5;" text="Modifier" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Button>
+      <ComboBox fx:id="cbTailleEntreprise" layoutX="605.0" layoutY="73.0" prefWidth="150.0" style="-fx-background-color: #FFFFFF;" stylesheets="@../controller/Stylee1.css" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="655.0" prefWidth="1327.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.esprit.controllers.CrudCandidatureController">
+   <children>
+      <TableView fx:id="tableCandidature" layoutX="28.0" layoutY="110.0" prefHeight="518.0" prefWidth="1271.0" style="-fx-alignment: center;">
+        <columns>
+          <TableColumn fx:id="dateCol" prefWidth="116.0" style="-fx-alignment: center;" text="Date" />
+          <TableColumn fx:id="nomCol" prefWidth="107.0" style="-fx-alignment: center;" text="nom" />
+            <TableColumn fx:id="prenomCol" prefWidth="123.0" style="-fx-alignment: center;" text="Prenom" />
+            <TableColumn fx:id="entrepriseCol" prefWidth="131.0" style="-fx-alignment: center;" text="Entreprise" />
+            <TableColumn fx:id="posteCol" prefWidth="309.0" style="-fx-alignment: center;" text="Poste" />
+            <TableColumn fx:id="domaineCol" prefWidth="106.0" style="-fx-alignment: center;" text="Domaine" />
+            <TableColumn fx:id="etatCol" prefWidth="100.0" style="-fx-alignment: center;" text="Etat" />
+            <TableColumn fx:id="gererCandCol" prefWidth="308.0" style="-fx-alignment: center; -fx-background-color: transparent;" text="Gerer Candidature" />
+        </columns>
+      </TableView>
+      <Label layoutX="51.0" layoutY="25.0" prefHeight="21.0" prefWidth="952.0" text="Liste des Candidatures" textAlignment="CENTER" textFill="#e02866">
+         <font>
+            <Font name="Elephant Italic" size="43.0" />
+         </font>
+      </Label>
+      <Separator layoutX="58.0" layoutY="90.0" prefHeight="0.0" prefWidth="1206.0" style="-fx-background-color: #e02866;" />
+   </children>
+</AnchorPane>

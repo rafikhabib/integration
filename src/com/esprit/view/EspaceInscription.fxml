@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.esprit.controllers.EspaceInscriptionController">
+   <children>
+      <Pane layoutY="1.0" prefHeight="400.0" prefWidth="299.0" style="-fx-background-color: #FDF8F3;">
+         <children>
+            <Button fx:id="entreprise" layoutX="39.0" layoutY="141.0" mnemonicParsing="false" onAction="#espaceentreprise" prefHeight="81.0" prefWidth="198.0" text="Espace Entreprise" />
+            <ImageView fitHeight="81.0" fitWidth="154.0" layoutX="237.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/findjob.PNG" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="299.0" layoutY="1.0" prefHeight="400.0" prefWidth="299.0" style="-fx-background-color: #f2b980;">
+         <children>
+            <Button fx:id="candidat" layoutX="51.0" layoutY="136.0" mnemonicParsing="false" onAction="#espacecandidat" prefHeight="81.0" prefWidth="198.0" text="Espace Candidat" />
+            <ImageView fitHeight="142.0" fitWidth="308.0" layoutX="-154.0" layoutY="269.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/welcome-removebg-preview.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

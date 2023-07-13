@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="rootPane" prefHeight="1250.0" prefWidth="2000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.esprit.controllers.ForumController">
+    <children>
+        <VBox layoutX="52.0" layoutY="183.0" spacing="20.0">
+            <ListView fx:id="forumListView" prefHeight="900.0" prefWidth="600.0" />
+            <HBox spacing="20.0" />
+        </VBox>
+        <VBox layoutX="700.0" layoutY="50.0" spacing="20.0">
+            <Label styleClass="header-label" text="Détails du Forum" />
+            <Label text="Sujet :" />
+            <TextField fx:id="sujetTextField" prefWidth="400.0" />
+            <Label text="Contenu :" />
+            <TextArea fx:id="contenuTextArea" prefHeight="300.0" prefWidth="400.0" wrapText="true" />
+            <Label text="Domaine :" />
+            <ChoiceBox fx:id="domaineChoiceBox" prefWidth="400.0" />
+        </VBox>
+            <VBox fx:id="forumInfoBox" layoutX="1232.0" layoutY="50.0" spacing="20.0">
+                <Label fx:id="forumSujetLabel" prefHeight="55.0" prefWidth="687.0" styleClass="header-label" text="forum" wrapText="true" />
+                <Label fx:id="forumContenuLabel" prefHeight="121.0" prefWidth="672.0" wrapText="true" />         
+                <HBox spacing="10.0">
+                    <TextArea fx:id="commentTextArea" HBox.hgrow="ALWAYS" />
+                    <Button fx:id="addCommentButton" onAction="#addComment" text="Ajouter" />
+                </HBox>
+         <ScrollPane hbarPolicy="NEVER" pannable="true" prefHeight="736.0" prefWidth="693.0">
+            <content>
+               <VBox fx:id="commentContainer" prefHeight="719.0" prefWidth="665.0" />
+            </content>
+         </ScrollPane>
+            </VBox>
+        <Button fx:id="createButton" layoutX="700.0" layoutY="681.0" onAction="#createForum" text="Créer" />
+        <Button fx:id="deleteButton" layoutX="824.0" layoutY="681.0" onAction="#deleteForum" text="Supprimer" />
+        <Button fx:id="saveButton" layoutX="990.0" layoutY="681.0" onAction="#modifyForum" text="Enregistrer" />
+        <TextField fx:id="chercherTextField" layoutX="52.0" layoutY="127.0" prefHeight="35.0" prefWidth="400.0" promptText="chercher..." />
+        <Button layoutX="516.0" layoutY="124.0" onAction="#clear" text="Reinitialiser" />
+         <Label layoutX="61.0" layoutY="50.0" styleClass="header-label" text="Forums" />
+    </children>
+    <stylesheets>
+        <URL value="@ForumCrud.css" />
+    </stylesheets>
+</AnchorPane>
